@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(221, 233, 238);
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 0 30px;
+}
+
+.container1>h1 {
+    color: rgb(0, 132, 255);
+    font-size: 70px;
+}
+
+.container1>p {
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container2 {
+    /* border: 1px solid; */
+    box-shadow: 0 0 5px 2px gray;
+    width: 350px;
+    height: auto;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+input,
+button {
+    display: block;
+    width: 90%;
+    height: 40px;
+    margin: 12px auto;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    background-color: rgb(0, 132, 255);
+    border: none;
+    width: 93%;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 1px solid skyblue;
+}
+
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 132, 255);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.create-btn {
+    margin-top: 20px;
+    border-top: 1px solid gray;
+    padding: 5px 0;
+}
+
+button {
+    background-color: green;
+    width: 75%;
+    cursor: pointer;
+}
+
+#para {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#para>span {
+    font-weight: bolder;
+}
+
+@media screen and (min-width:200px) and (max-width:800px) {
+    .main {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .container1 {
+        text-align: center;
+    }
+
+    .container2 {
+        margin: 30px auto 0;
+    }
+}
